@@ -1,6 +1,6 @@
-s = input().rstrip('.').replace(' ', '').lower()
+s = input().rstrip('.').replace('', ' ').lower().split()
+s = ''.join(sorted(s, reverse=True))
 f_s = ''
-e_s = ''
 spec = ''
 flag = 0
 for el in s:
@@ -14,10 +14,9 @@ for el in s:
         s = s.replace(el, '', s.count(el))
     else:
         f_s += el
-        e_s += el
         s = s.replace(el, '', 2)
 if flag > 1:
     print("NO Answer :( It's impossible")
 else:
-    print(f"He-he it's possible {(f_s + spec + e_s[::-1]).upper()}")
+    print(f"He-he it's possible {(f_s + spec + f_s[::-1]).upper()}")
 
