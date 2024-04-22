@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<table>
+	<record>
+		<id>174904234</id>
+		<first_name>John</first_name>
+		<last_name>Doe</last_name>
+		<passport>123456</passport>
+	</record>
+	<record>
+		<id>21473423592</id>
+		<first_name>Jane</first_name>
+		<last_name>Doe</last_name>
+		<passport>759493</passport>
+	</record>
+	<record>
+		<id>34202525</id>
+		<first_name>Major</first_name>
+		<last_name>Payne</last_name>
+		<passport>828516</passport>
+	</record>
+</table>
