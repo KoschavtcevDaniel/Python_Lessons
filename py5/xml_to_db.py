@@ -12,7 +12,8 @@ for client in clients:
     first_name = client.getElementsByTagName('first_name')[0].childNodes[0].data
     last_name = client.getElementsByTagName('last_name')[0].childNodes[0].data
     passport = client.getElementsByTagName('passport')[0].childNodes[0].data
-    cursor.execute("insert into Clients (id, first_name, last_name, passport) values (?, ?, ?, ?)",
+    ownership = client.getElementsByTagName('ownership')[0].childNodes[0].data
+    cursor.execute("insert into Clients (id, first_name, last_name, passport, ownership) values (?, ?, ?, ?, ?)",
                    (client_id, first_name, last_name, passport))
 conn.commit()
 conn.close()
