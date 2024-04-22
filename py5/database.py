@@ -17,37 +17,38 @@ class CreateDataBase(object):
         pass
 
 
-connection = sql.connect('insurance_company.db')
+connection = sql.connect('real_estate_agency.db')
 cursor = connection.cursor()
 cursor.execute(
     """create table if not exists Clients (
         id INTEGER PRIMARY KEY,
         first_name VARCHAR(30) not null,
         last_name VARCHAR(30) not null,
-        passport VARCHAR(30) not null);""")
+        passport VARCHAR(30) not null,
+        ownership VARCHAR(300) not null);""")
 
 cursor.execute(
-    """create table if not exists Insurance_Objects (
+    """create table if not exists Realty (
         id INTEGER PRIMARY KEY,
         object VARCHAR(30) not null,
-        description VARCHAR(300));""")
+        status VARCHAR(100));""")
 
 cursor.execute(
     """create table if not exists Contracts (
-        contracts_№ INTEGER PRIMARY KEY,
+        contract INTEGER PRIMARY KEY,
         client_id INTEGER not null,
         object_id INTEGER not null,
-        contract_date DATETIME not null,
-        insurance_payment FLOAT not null,
+        date DATETIME not null,
+        payment FLOAT not null,
         foreign key (client_id) references Clients (id),
-        foreign key (object_id) references Insurance_Objects (id));""")
+        foreign key (object_id) references Realty (id));""")
 
 cursor.execute(
-    """create table if not exists Insurance_Payments (
+    """create table if not exists RealtyPayment (
         id INTEGER primary key,
         date DATETIME not null,
-        contracts_№ Integer not null,
-        foreign key (contracts_№) references Contracts (contracts_№))""")
+        contract Integer not null,
+        foreign key (contract) references Contracts (contract))""")
 
 connection.commit()
 cursor.close()

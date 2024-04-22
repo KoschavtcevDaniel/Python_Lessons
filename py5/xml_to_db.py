@@ -1,7 +1,7 @@
 import sqlite3
 import xml.dom.minidom
 
-conn = sqlite3.connect('insurance_company.db')
+conn = sqlite3.connect('real_estate_agency.db')
 cursor = conn.cursor()
 xml_file = 'table.xml'
 doc = xml.dom.minidom.parse(xml_file)

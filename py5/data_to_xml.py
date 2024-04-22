@@ -5,9 +5,11 @@ root = doc.createElement('table')
 doc.appendChild(root)
 
 data = [
-    {"id": "174904234", "first_name": "John", "last_name": "Doe", "passport": "123456"},
-    {"id": "21473423592", "first_name": "Jane", "last_name": "Doe", "passport": "759493"},
-    {"id": "34202525", "first_name": "Major", "last_name": "Payne", "passport": "828516"}
+    {"id": "3251441351", "first_name": "Daniil", "last_name": "Koshch", "passport": "0364123456", "ownership": "Car: Impala1969, House: st.Krasnay, 93"},
+    {"id": "6541687451", "first_name": "Andrei", "last_name": "Kormiltcev", "passport": "0356691587", "ownership": "Car: LadaReno"},
+    {"id": "7864161854", "first_name": "Anton", "last_name": "Barsov", "passport": "0706154646", "ownership": "House: st.Morkova, 94/1"},
+    {"id": "7498921465", "first_name": "Marya", "last_name": "Klarnet", "passport": "1306649255", "ownership": "House: st.Teremok, 123"},
+    {"id": "1674945654", "first_name": "Anna", "last_name": "Zemelko", "passport": "0609135648", "ownership": "-"},
 ]
 for row in data:
     record = doc.createElement('record')
