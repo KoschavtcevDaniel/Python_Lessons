@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<trainings>
+	<training>
+		<id>1</id>
+		<date>2024-04-07</date>
+		<client_id>1</client_id>
+		<trainer_id>2</trainer_id>
+	</training>
+	<training>
+		<id>2</id>
+		<date>2024-05-07</date>
+		<client_id>2</client_id>
+		<trainer_id>1</trainer_id>
+	</training>
+	<training>
+		<id>3</id>
+		<date>2024-03-07</date>
+		<client_id>3</client_id>
+		<trainer_id>3</trainer_id>
+	</training>
+	<training>
+		<id>4</id>
+		<date>2024-04-28</date>
+		<client_id>4</client_id>
+		<trainer_id>1</trainer_id>
+	</training>
+	<training>
+		<id>5</id>
+		<date>2024-04-07</date>
+		<client_id>5</client_id>
+		<trainer_id>4</trainer_id>
+	</training>
+</trainings>

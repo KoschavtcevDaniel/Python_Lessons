@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<clients>
+	<client>
+		<id>1</id>
+		<fullname>Gaivoronskiy Oleg</fullname>
+		<tel>88005557575</tel>
+	</client>
+	<client>
+		<id>2</id>
+		<fullname>Korito Obiknovennoe</fullname>
+		<tel>89575542375</tel>
+	</client>
+	<client>
+		<id>3</id>
+		<fullname>Daynigga Yakov</fullname>
+		<tel>88888888888</tel>
+	</client>
+	<client>
+		<id>4</id>
+		<fullname>fasgsag</fullname>
+		<tel>11111111111</tel>
+	</client>
+	<client>
+		<id>5</id>
+		<fullname>hhh</fullname>
+		<tel>45454545454</tel>
+	</client>
+	<client>
+		<id>6</id>
+		<fullname>ttttt</fullname>
+		<tel>5456444564654</tel>
+	</client>
+</clients>
